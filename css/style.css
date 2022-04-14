@@ -162,6 +162,61 @@ p {
     }
 }
 
+@media (max-width: 480px) { 
+    footer {
+        background-color: #58494e;
+        font-family: 'Qanelas';
+        font-weight: 200;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .navPrincipal__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .navPrincipal__enlaces {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer__p {
+        text-align: center;
+        color: white;
+    }
+ }
+
+ @media (max-width: 480px) { 
+    .contenidoPrincipal {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contenidoPrincipal__texto {
+        text-align: center;
+        margin-bottom: 3rem;
+       
+    }
+    .imagenPrincipal {
+        width: auto;
+        max-height: 500px;
+    }
+
+    h1 {
+        font-size: 40px;
+
+    }
+
+  }
+
+
 
 /** Seccion Contacto **/
 
