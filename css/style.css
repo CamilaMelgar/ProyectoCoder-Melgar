@@ -82,7 +82,7 @@ p {
     column-gap: 20px;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 600px) { 
     .navPrincipal {
         display: flex;
         align-items: center;
@@ -101,7 +101,7 @@ p {
     height: 1px;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 600px) { 
     .contenidoPrincipal {
         display: flex;
         justify-content: space-between;
@@ -115,6 +115,7 @@ p {
     }
     .contenidoPrincipal__imagen {
         margin-right: 2rem;
+        width: 100%;
     }
 }
 
@@ -145,7 +146,7 @@ p {
   }
 
 
-@media (min-width: 768px) { 
+@media (min-width: 600px) { 
     footer {
         background-color: #58494e;
         font-family: 'Qanelas';
@@ -155,6 +156,7 @@ p {
     
     .navPrincipal__enlaces {
         color: white;
+        font-size: 15px;
     }
     .footer__p {
         text-align: center;
@@ -162,7 +164,7 @@ p {
     }
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 600px) { 
     footer {
         background-color: #58494e;
         font-family: 'Qanelas';
@@ -191,7 +193,7 @@ p {
     }
  }
 
- @media (max-width: 480px) { 
+ @media (max-width: 600px) { 
     .contenidoPrincipal {
         display: flex;
         flex-direction: column-reverse;
@@ -205,7 +207,7 @@ p {
        
     }
     .imagenPrincipal {
-        width: auto;
+        width: 100%;
         max-height: 500px;
     }
 
@@ -294,6 +296,10 @@ p {
 
 /*seccion tipos de terapias*/
 
+.titulo-margin {
+    margin-bottom: 5rem;
+}
+
 .box {
     background-color: white;
     min-height: 200px;
@@ -303,51 +309,75 @@ p {
     -moz-box-shadow: 10px 10px 5px 0px rgba(240,195,240,1);
     box-shadow: 10px 10px 5px 0px rgba(240,195,240,1);
     text-align: center;
-    transform: translateY(-480px);
-}
-
-.grid { 
-    display: grid;
-    position: relative;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas:
-    'left' 'center' 'right'
-    'left-bottom center right-bottom';
-    margin-top: 5rem;
 }
 
 .box__p {
     font-weight: 300;
     font-size: 20px;
-    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.grid__uno {
-    grid-area: 'center';
-    grid-column: 2/3;
+@media (min-width: 768px) { 
+    .grid {
+        display: grid;
+       grid-template-columns: 1fr 2fr 1fr;
+       grid-template-rows: 1fr;
+       grid-column-gap: 50px;
+       grid-row-gap: 0px;
+       align-items: center;
+       justify-content: center;
+    }
+    .grid__uno {
+        grid-area: 1/2;
+    }
+
+    .grid__dos {
+        grid-area: 1/3;
+    }
+
+    .grid__tres {
+    grid-area: 1/1;
+    margin-left: 3rem ;
+    }
+    
 }
 
-.grid__dos {
-    grid-area: 'left';
-    grid-column: 1/3;
-    margin-left: 3rem;
-}
+@media (min-width: 300px) and (max-width: 600px) { 
+    .imagenTerapias {
+        width: 100%;
+        max-height: 300px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
 
-.grid__tres {
- grid-area: 'left-bottom';
- margin-left: 5rem;
-}
+    .grid__uno {
+        display: flex;
+        justify-content: center;
+    }
+    .grid__dos {
+        display: flex;
+        box-sizing: content-box;
+        width: 100%;
+       
+        justify-content: center;
+    }
 
-.grid__cuatro {
-    grid-area: 'right';
-    margin-left: 3rem;
-   
-}
+    .grid__tres {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
 
-.grid__cinco {
-    grid-area: 'right-bottom';
-    grid-column: -2/-1;
-    margin-left: 5rem;
+    .box {
+        width: 100%;
+    }
 }
 
 /*seccion reservas*/
@@ -412,10 +442,44 @@ p {
 
 .columnas__p {
     text-align: center;
+    font-size: 20px;
+}
+
+.titulos {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
 }
 
 
-/* NUEVOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO  */
+@media (min-width: 600px) { 
+    .doscolumnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 20px;
+        justify-content: center;
+        margin: 2rem;
+        margin-top: 8rem;
+        }
+
+    .divanImg {
+     margin-top: 10rem;
+        }  
+
+    .columna--margin {
+        margin-top: 5rem;
+    }
+
+    .ColumnaDos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* hamburguesa nav  */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
