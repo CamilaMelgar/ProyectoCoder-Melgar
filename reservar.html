@@ -45,33 +45,34 @@
     <form class="form">
 
     <div class="formulario">
-      <div>
-        <label class="form__label" for="name">Nombre</label>
-        <input class="form__decor" type="text" name="name" id="name" placeholder="Escribe tu nombre">
-        <label class="form__label" for="Apellido">Apellido</label>
-        <input class="form__decor" type="text" name="Apellido" id="Apellido" placeholder="Escribe tu apellido">
+      <div class="formulario__uno">
+        <label class="form__label form__nombre" for="name">Nombre</label>
+        <input class="form__decor form__nombre--input" type="text" name="name" id="name" placeholder="Escribe tu nombre">
+        <label class="form__label form__apellido" for="Apellido">Apellido</label>
+        <input class="form__decor apellido--input" type="text" name="Apellido" id="Apellido" placeholder="Escribe tu apellido">
       </div>
-      <div>
-        <label class="form__label" for="fecha">Seleccione una fecha</label>
-        <input class="form__decor" type="date" name="fecha" id="fecha">
-        <label class="form__label" for="hora">Seleccione una hora</label>
-        <select class="form__decor" id="hora">
+      <div class="formulario__uno">
+        <label class="form__label form__nombre" for="fecha">Seleccione una fecha</label>
+        <input class="form__decor form__nombre--input" type="date" name="fecha" id="fecha">
+        <label class="form__label form__apellido" for="hora">Seleccione una hora</label>
+        <select class="form__decor apellido--input" id="hora">
           <option class="form__decor" value="AM">AM</option>
           <option class="form__decor" value="PM">PM</option>
         </select>
-        <input class="form__decor" type="time" name="hora" id="hora">
+        <input class="form__decor apellido--input" type="time" name="hora" id="hora">
       </div>
-      <div>
-        <label class="form__label" for="terapia">Tipo de Terapia</label>
-        <input class="form__decor" type="text" name="terapia" id="terapia" placeholder="Escribe aquí">
+      <div class="gridForm__reserva">
+        <label class="form__label grid--reserva" for="terapia">Tipo de Terapia</label>
+        <input class="form__decor reserva--input" type="text" name="terapia" id="terapia" placeholder="Escribe aquí">
       </div>
-      <div>
-        <label class="form__label" for="celular">Número de Contacto</label>
-        <input class="form__decor" type="number" placeholder="Escribe aqui tu número" name="celular" id="celular" min="0">
-        <label class="form__label" for="Email">Email</label>
-        <input class="form__decor" type="email" placeholder="Escribe aqui tu email" name="Email" id="Email">
+      <div class="formulario__uno">
+        <label class="form__label form__nombre" for="celular">Número de Contacto</label>
+        <input class="form__decor form__nombre--input" type="number" placeholder="Escribe aqui tu número" name="celular" id="celular" min="0">
+        <label class="form__label form__apellido" for="Email">Email</label>
+        <input class="form__decor apellido--input" type="email" placeholder="Escribe aqui tu email" name="Email" id="Email">
       </div>
-      <button class="submit" type="submit">Hacer Reserva</button>
+      <div class="boton__reservar"><button class="submit" type="submit">Hacer Reserva</button></div>
+      
     </div>  
 
       
