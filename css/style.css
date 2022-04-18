@@ -329,7 +329,7 @@ textarea {
     width: 95%;
     padding: 0.5rem 0.75rem;
     font-family: 'Qanelas';
-    font-weight: 400;
+    font-weight: 200;
     height: 90px;
   }
 
@@ -393,7 +393,7 @@ textarea {
 
 .form__input {
     border: none;
-    border-bottom-style: solid;
+    border-bottom-style: groove;
 }
 
 @media (max-width: 768px) { 
@@ -415,6 +415,7 @@ textarea {
 
     .bloque__Dos {
         width: 100%;
+        border-bottom-left-radius: 16px;
     }
    
     .contacto_p {
@@ -483,7 +484,7 @@ textarea {
         width: 95%;
         padding: 0.5rem 0.75rem;
         font-family: 'Qanelas';
-        font-weight: 400;
+        font-weight: 200;
         height: 90px;
       }
 
@@ -706,11 +707,11 @@ textarea {
 
         .boton__reservar {
             margin-top: 4rem;
-            display: flex;
-            justify-content: center;
             text-align: center;
             width: 50%;
+            transform: translateX(12rem);
         }
+
         
 }
 
