@@ -522,27 +522,7 @@ textarea {
     -moz-box-shadow: 10px 10px 5px 0px rgba(240,195,240,1);
     box-shadow: 10px 10px 5px 0px rgba(240,195,240,1);
     text-align: center;
-    transition: all 0.3s ease-in-out;
 }
-.box::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 200px;
-    opacity: 0;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  .box:hover {
-    transform: scale(1.2, 1.2);
-  }
-
-  .box:hover::after {
-    opacity: 1;
-  }
 
 .box__p {
     font-weight: 300;
@@ -575,6 +555,7 @@ textarea {
     margin-left: 3rem ;
     }
 
+    
 }
 
 @media (min-width: 300px) and (max-width: 768px) { 
