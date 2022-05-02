@@ -560,15 +560,18 @@ p {
     margin-bottom: 5rem;
 }
 
-.box {
+.box-2{
     background-color: white;
     min-height: 200px;
-    width: 200px;
-    margin: 20px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(240, 195, 240, 1);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(240, 195, 240, 1);
-    box-shadow: 10px 10px 5px 0px rgba(240, 195, 240, 1);
-    text-align: center;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
     transition: all 0.3s ease-in-out;
 }
 
@@ -580,7 +583,6 @@ p {
     height: 200px;
     opacity: 0;
     border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -595,9 +597,10 @@ p {
 .box__p {
     font-weight: 300;
     font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.shadow{
+    box-shadow: 0 .5rem 1rem rgba(240,195,240,1)!important;
 }
 
 /* @media (min-width: 768px) {
