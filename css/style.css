@@ -600,7 +600,7 @@ p {
     align-items: center;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
@@ -609,6 +609,7 @@ p {
         grid-row-gap: 0px;
         align-items: center;
         justify-content: center;
+        margin-bottom: 5rem;
     }
 
     .grid__uno {
@@ -624,9 +625,9 @@ p {
         margin-left: 3rem;
     }
 
-}
+} */
 
-@media (min-width: 300px) and (max-width: 768px) {
+/* @media (min-width: 300px) and (max-width: 768px) {
 
     .grid {
         display: grid;
@@ -658,7 +659,7 @@ p {
     .box {
         width: 100%;
     }
-}
+} */
 
 /*seccion reservas*/
 
@@ -855,34 +856,6 @@ p {
 .titulos {
     margin-top: 4rem;
     margin-bottom: 5rem;
-}
-
-
-@media (min-width: 600px) {
-    .doscolumnas {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1fr);
-        grid-column-gap: 50px;
-        justify-content: center;
-        margin: 2rem;
-        margin-top: 5rem;
-    }
-
-    .divanImg {
-        margin-top: 10rem;
-    }
-
-    .columna--margin {
-        margin-top: 5rem;
-    }
-
-    .ColumnaDos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 @media (max-width: 400px) {
