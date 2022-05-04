@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Qanelas';
+    src: url(../fonts/Qanelas-ExtraBold.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Qanelas';
+    src: url(../fonts/Qanelas-Light.ttf);
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Qanelas';
+    src: url(../fonts/Qanelas-Medium.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Qanelas';
+    src: url(../fonts/Qanelas-UltraLight.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+
+    body  { background-color: #F5ebee;
+    font-family: 'Qanelas';
+    min-height: 100%;
+
+    nav {
+        div {
+            a{
+                text-decoration: none;
+                justify-content: space-between;
+                font-family: 'Qanelas';
+                font-weight: 200;
+            }
+        }
+    }
+    }
+}
+
+h1 {
+    font-family: 'Qanelas';
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-family: 'Qanelas';
+    font-size: 50px;
+    text-align: center;
+}
+
+p {
+    font-weight: 100;
+}
+
+@import "index";
+@import "header";
