@@ -71,16 +71,6 @@ p {
     height: 100px;
 }
 
-
-.navPrincipal {
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: black;
-    font-family: 'Qanelas';
-    font-weight: 200;
-}
-
 .navPrincipal__buttons {
     margin: auto;
     justify-content: center;
@@ -97,69 +87,14 @@ p {
     padding-right: 100px;
 }
 
-@media (min-width: 600px) {
-    .navPrincipal {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 2rem;
-    }
-
-    .navPrincipal__buttons {
-        margin: auto;
-        justify-content: center;
-    }
-}
-
-.spacer {
-    min-width: 150px;
-    height: 1px;
-}
-
-.contenidoPrincipal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
-}
-
-.contenidoPrincipal__texto {
+ .contenidoPrincipal__texto {
     padding-left: 2rem;
-}
-
-.contenidoPrincipal__imagen {
-    margin-right: 2rem;
-    width: 100%;
 }
 
 .imagenPrincipal {
     width: 80%;
 }
-
-.navPrincipal__logo {
-    width: 150px;
-}
-
-@media (min-width: 769px) and (max-width: 900px) {
-    .contenidoPrincipal {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-
-    }
-
-    .contenidoPrincipal__texto {
-        padding-left: 2rem;
-        margin-bottom: 3rem;
-    }
-
-    .contenidoPrincipal__imagen {
-        margin-right: 2rem;
-        width: 100%;
-    }
-}
+ 
 
 .contenidoPrincipal__texto--p {
     font-size: 20px;
@@ -245,13 +180,6 @@ p {
 }
 
 @media (max-width: 768px) {
-    .contenidoPrincipal {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-
-    }
 
     .contenidoPrincipal__texto {
         padding-left: 2rem;
@@ -607,7 +535,8 @@ p {
     box-shadow: 0 .5rem 1rem rgba(240,195,240,1)!important;
 }
 
-/* @media (min-width: 768px) {
+/* los media de antes de bootstrap.
+   @media (min-width: 768px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
