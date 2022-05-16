@@ -1,0 +1,199 @@
+.flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .reservaBloque {
+        align-items: center;
+        margin-top: 3rem;
+        .reservaBloque__p {
+            text-align: center;
+            margin-top: 3rem;
+            margin-left: 2rem;
+            font-size: 25px;
+        }
+    }
+    form {
+        .formulario {
+            width: 500px;
+            min-height: 600px;
+            margin: 50px;
+            background-color: white;
+            justify-content: center;
+            border-radius: 16px 16px 16px 16px;
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75);
+            .formulario__uno {
+                .form__label {
+                    font-family: 'Qanelas';
+                    font-weight: 200;
+                }
+                .form__decor {
+                    @include formDecor;
+                }
+                select {
+                    .form__decor {
+                        @include formDecor;
+                    }
+                }
+            }
+            .gridForm__reserva {
+                .form__label {
+                    font-family: 'Qanelas';
+                    font-weight: 200;
+                }
+                .form__decor {
+                    @include formDecor;
+                }
+            }
+            .boton__reservar {
+                .submit {
+                    margin-top: 1.5rem;
+                    padding: 20px 20px;
+                    font-family: 'Qanelas';
+                    font-weight: 300;
+                    font-size: 20px;
+                    color: white;
+                    background-color: #8D62D7;
+                    text-align: center;
+                    border-radius: 20px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (min-width: 800px) {
+    main {
+        form {
+            div {
+                .formulario__uno {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(1fr);
+                    grid-column-gap: 36px;
+                    grid-row-gap: 26px;
+                    margin-left: 2rem;
+                    .form__nombre {
+                        grid-area: 1/1;
+                        font-family: 'Qanelas';
+                        font-weight: 200;
+                        font-size: 20px;
+                    }
+                    .form__nombre--input {
+                        grid-area: 2/1;
+                    }
+                
+                    .form__apellido {
+                        grid-area: 1/2;
+                        font-family: 'Qanelas';
+                        font-weight: 200;
+                        font-size: 20px;
+                    }
+                
+                    .apellido--input {
+                        grid-area: 2/2;
+                    }
+                }
+                .gridForm__reserva {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr, 1fr;
+                    grid-column-gap: 36px;
+                    grid-row-gap: 26px;
+                    margin-left: 2rem;
+                    .grid--reserva {
+                        grid-area: 1/1;
+                        font-family: 'Qanelas';
+                        font-size: 20px;
+                        font-weight: 200;
+                
+                    }
+                    .reserva--input {
+                        grid-area: 2/1;
+                    }
+                }
+                .boton__reservar {
+                    margin-top: 4rem;
+                    text-align: center;
+                    width: 50%;
+                    transform: translateX(12rem);
+                }
+                .formulario__uno {
+                    .form__label {
+                        margin-top: 1.5rem;
+                
+                    }
+                }
+                .gridForm__reserva {
+                    .form__label {
+                        margin-top: 1.5rem;
+                
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 799px) {
+    .flex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr;
+        justify-content: center;
+        align-items: center;
+        .reservaBloque {
+            grid-area: 1/1;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        .form {
+            display: flex;
+            justify-content: center;
+            .formulario {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                .formulario__uno {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .form__decor {
+                        @include formDecor;
+                        width: 80%;
+                        option {
+                            @include formDecor;
+                        }
+                    }
+                    .form__label {
+                        font-size: 18px;
+                    }
+                }
+                .gridForm__reserva {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .form__decor {
+                        @include formDecor;
+                        width: 80%;
+                    }
+                    .form__label {
+                        font-size: 18px;
+                    }
+                }
+                .boton__reservar {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    } 
+}

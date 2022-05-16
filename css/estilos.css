@@ -28,16 +28,18 @@
   box-sizing: border-box; }
 
 html {
+  font-size: 62.5%;
   height: 100vh; }
   html body {
     background-color: #F5ebee;
     font-family: 'Qanelas';
     min-height: 100%; }
-    html body nav div a {
-      text-decoration: none;
-      justify-content: space-between;
-      font-family: 'Qanelas';
-      font-weight: 200; }
+
+a {
+  text-decoration: none;
+  justify-content: space-between;
+  font-family: 'Qanelas';
+  font-weight: 200; }
 
 h1 {
   font-family: 'Qanelas';
@@ -52,6 +54,213 @@ h2 {
 
 p {
   font-weight: 100; }
+
+.bloque {
+  display: flex;
+  width: auto;
+  min-height: 500px;
+  margin: 50px;
+  background-color: white;
+  justify-content: center;
+  border-radius: 16px 16px 16px 16px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75); }
+  .bloque .vertical_flex {
+    display: flex;
+    flex-direction: column; }
+  .bloque .bloque__Uno {
+    background-color: #8D62D7;
+    color: white;
+    border-radius: 16px;
+    width: 30%; }
+    .bloque .bloque__Uno .bloque__Uno--text {
+      text-align: center;
+      margin-top: 2rem; }
+    .bloque .bloque__Uno .margin_30 {
+      font-size: 15px;
+      margin: 10px 30px 0px 30px; }
+    .bloque .bloque__Uno .titulo__form {
+      font-size: 35px; }
+    .bloque .bloque__Uno .bloque__margin {
+      margin: auto; }
+      .bloque .bloque__Uno .bloque__margin .bloque__flex {
+        display: flex;
+        margin: 0px 0px 0px 0px; }
+        .bloque .bloque__Uno .bloque__margin .bloque__flex .contacto_p {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+      .bloque .bloque__Uno .bloque__margin .flex_row {
+        display: flex;
+        margin: 30px 0px 0px 0px; }
+        .bloque .bloque__Uno .bloque__margin .flex_row .contacto_p {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+  .bloque .bloque__Dos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: white;
+    border-radius: 0px 16px 16px 0px;
+    width: 70%; }
+    .bloque .bloque__Dos .contenidoForm1 .nombre__input .form__input {
+      border: none;
+      border-bottom-style: groove; }
+    .bloque .bloque__Dos .contenidoForm1 .apellido__input .form__input {
+      border: none;
+      border-bottom-style: groove; }
+    .bloque .bloque__Dos .flex__boton {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 3rem; }
+      .bloque .bloque__Dos .flex__boton .enviarBoton {
+        font-family: 'Qanelas';
+        font-weight: 300;
+        font-size: 20px;
+        color: white;
+        background-color: #8D62D7;
+        text-align: center;
+        border-radius: 20px;
+        width: 20%;
+        height: 60px; }
+        .bloque .bloque__Dos .flex__boton .enviarBoton:hover {
+          cursor: pointer; }
+
+@media (min-width: 800px) {
+  main .bloque__Dos .contenidoForm1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-column-gap: 36px;
+    grid-row-gap: 26px;
+    margin-left: 2rem; }
+    main .bloque__Dos .contenidoForm1 .nombre {
+      grid-area: 1/1;
+      font-family: 'Qanelas';
+      font-weight: 400;
+      font-size: 20px; }
+    main .bloque__Dos .contenidoForm1 .nombre__input {
+      grid-area: 2/1; }
+      main .bloque__Dos .contenidoForm1 .nombre__input input {
+        width: 90%; }
+    main .bloque__Dos .contenidoForm1 .apellido {
+      grid-area: 1/2;
+      font-family: 'Qanelas';
+      font-weight: 400;
+      font-size: 20px; }
+    main .bloque__Dos .contenidoForm1 .apellido__input {
+      grid-area: 2/2; }
+      main .bloque__Dos .contenidoForm1 .apellido__input input {
+        width: 90%; }
+  main .bloque__Dos .contenidoForm2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 2fr;
+    grid-column-gap: 36px;
+    grid-row-gap: 10px; }
+    main .bloque__Dos .contenidoForm2 .mensaje {
+      grid-area: 1/1;
+      margin-left: 2rem;
+      font-family: 'Qanelas';
+      font-weight: 400;
+      font-size: 20px; }
+    main .bloque__Dos .contenidoForm2 .mensaje__input {
+      grid-area: 2/1;
+      margin-left: 2rem; }
+      main .bloque__Dos .contenidoForm2 .mensaje__input textarea {
+        display: block;
+        box-sizing: border-box;
+        width: 95%;
+        padding: 0.5rem 0.75rem;
+        font-family: 'Qanelas';
+        font-weight: 200;
+        height: 90px; } }
+
+@media (max-width: 768px) {
+  .bloque {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-height: 500px;
+    margin: 50px;
+    background-color: white;
+    justify-content: center;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75); }
+    .bloque .bloque__Uno {
+      width: 100%; }
+      .bloque .bloque__Uno .titulo__form {
+        width: 100%;
+        font-size: 30px; }
+      .bloque .bloque__Uno .bloque__margin .bloque__flex .contacto_p {
+        font-weight: 700; }
+      .bloque .bloque__Uno .bloque__margin .flex_row .contacto_p {
+        font-weight: 700; }
+    .bloque .bloque__Dos {
+      width: 100%;
+      border-bottom-left-radius: 16px; }
+      .bloque .bloque__Dos .contenidoForm1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1fr);
+        grid-column-gap: 36px;
+        grid-row-gap: 26px;
+        margin-left: 2rem; }
+        .bloque .bloque__Dos .contenidoForm1 .nombre {
+          grid-area: 1/1;
+          font-family: 'Qanelas';
+          font-weight: 400;
+          font-size: 20px; }
+        .bloque .bloque__Dos .contenidoForm1 .nombre__input {
+          grid-area: 2/1; }
+          .bloque .bloque__Dos .contenidoForm1 .nombre__input input {
+            width: 90%; }
+        .bloque .bloque__Dos .contenidoForm1 .apellido {
+          grid-area: 1/2;
+          font-family: 'Qanelas';
+          font-weight: 400;
+          font-size: 20px; }
+        .bloque .bloque__Dos .contenidoForm1 .apellido__input {
+          grid-area: 2/2; }
+          .bloque .bloque__Dos .contenidoForm1 .apellido__input input {
+            width: 90%; }
+      .bloque .bloque__Dos .contenidoForm2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 2fr;
+        grid-column-gap: 36px;
+        grid-row-gap: 10px;
+        margin-left: 2rem; }
+        .bloque .bloque__Dos .contenidoForm2 .mensaje {
+          grid-area: 1/1;
+          font-family: 'Qanelas';
+          font-weight: 400;
+          font-size: 20px; }
+        .bloque .bloque__Dos .contenidoForm2 .mensaje__input {
+          grid-area: 2/1; }
+          .bloque .bloque__Dos .contenidoForm2 .mensaje__input textarea {
+            display: block;
+            box-sizing: border-box;
+            width: 95%;
+            padding: 0.5rem 0.75rem;
+            font-family: 'Qanelas';
+            font-weight: 200;
+            height: 90px; }
+      .bloque .bloque__Dos .flex__boton {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem; }
+        .bloque .bloque__Dos .flex__boton .enviarBoton {
+          font-family: 'Qanelas';
+          font-weight: 300;
+          font-size: 20px;
+          color: white;
+          background-color: #8D62D7;
+          text-align: center;
+          border-radius: 20px;
+          width: 40%;
+          height: 60px; } }
 
 main div .contenidoPrincipal__texto {
   padding-left: 2rem; }
@@ -91,6 +300,12 @@ header nav div .collapse-padding {
   padding-right: 100px; }
   header nav div .collapse-padding .navbar-auto {
     margin: 0 auto; }
+  header nav div .collapse-padding ul .nav-item {
+    margin-left: 5rem; }
+    header nav div .collapse-padding ul .nav-item .nav-link {
+      font-size: 1.6rem;
+      font-weight: 200;
+      color: black; }
 
 footer {
   background-color: #58494e;
@@ -130,3 +345,227 @@ footer {
     margin-bottom: 2rem;
     margin-top: 2rem;
     text-align: center; } }
+
+main div .columnas__p {
+  text-align: center;
+  font-size: 20px; }
+
+main div .titulos {
+  margin-top: 4rem;
+  margin-bottom: 5rem; }
+
+@media (max-width: 400px) {
+  main div .ColumnaDos__flex {
+    display: flex; }
+    main div .ColumnaDos__flex iframe {
+      width: 50%;
+      margin-left: 2rem; }
+    main div .ColumnaDos__flex .columna--margin {
+      width: 40%;
+      margin-left: 1rem; } }
+
+main .titulo-margin {
+  margin-bottom: 5rem; }
+
+main div div div div div .box-2 {
+  background-color: white;
+  min-height: 200px; }
+  main div div div div div .box-2 .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+main div div div div div .box {
+  transition: all 0.3s ease-in-out; }
+  main div div div div div .box::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+    opacity: 0;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out; }
+  main div div div div div .box:hover {
+    transform: scale(1.2, 1.2); }
+    main div div div div div .box:hover::after {
+      opacity: 1; }
+  main div div div div div .box .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+main div div div div div .box__p {
+  font-weight: 300;
+  font-size: 20px; }
+  main div div div div div .box__p .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+main div div div div div .shadow {
+  box-shadow: 0 0.5rem 1rem #f0c3f0 !important; }
+  main div div div div div .shadow .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .flex .reservaBloque {
+    align-items: center;
+    margin-top: 3rem; }
+    .flex .reservaBloque .reservaBloque__p {
+      text-align: center;
+      margin-top: 3rem;
+      margin-left: 2rem;
+      font-size: 25px; }
+  .flex form .formulario {
+    width: 500px;
+    min-height: 600px;
+    margin: 50px;
+    background-color: white;
+    justify-content: center;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75); }
+    .flex form .formulario .formulario__uno .form__label {
+      font-family: 'Qanelas';
+      font-weight: 200; }
+    .flex form .formulario .formulario__uno .form__decor {
+      font-family: 'Qanelas';
+      font-weight: 100;
+      background-color: #F5ebee;
+      border: none;
+      height: 40px; }
+    .flex form .formulario .formulario__uno select .form__decor {
+      font-family: 'Qanelas';
+      font-weight: 100;
+      background-color: #F5ebee;
+      border: none;
+      height: 40px; }
+    .flex form .formulario .gridForm__reserva .form__label {
+      font-family: 'Qanelas';
+      font-weight: 200; }
+    .flex form .formulario .gridForm__reserva .form__decor {
+      font-family: 'Qanelas';
+      font-weight: 100;
+      background-color: #F5ebee;
+      border: none;
+      height: 40px; }
+    .flex form .formulario .boton__reservar .submit {
+      margin-top: 1.5rem;
+      padding: 20px 20px;
+      font-family: 'Qanelas';
+      font-weight: 300;
+      font-size: 20px;
+      color: white;
+      background-color: #8D62D7;
+      text-align: center;
+      border-radius: 20px; }
+      .flex form .formulario .boton__reservar .submit:hover {
+        cursor: pointer; }
+
+@media (min-width: 800px) {
+  main form div .formulario__uno {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-column-gap: 36px;
+    grid-row-gap: 26px;
+    margin-left: 2rem; }
+    main form div .formulario__uno .form__nombre {
+      grid-area: 1/1;
+      font-family: 'Qanelas';
+      font-weight: 200;
+      font-size: 20px; }
+    main form div .formulario__uno .form__nombre--input {
+      grid-area: 2/1; }
+    main form div .formulario__uno .form__apellido {
+      grid-area: 1/2;
+      font-family: 'Qanelas';
+      font-weight: 200;
+      font-size: 20px; }
+    main form div .formulario__uno .apellido--input {
+      grid-area: 2/2; }
+  main form div .gridForm__reserva {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-column-gap: 36px;
+    grid-row-gap: 26px;
+    margin-left: 2rem; }
+    main form div .gridForm__reserva .grid--reserva {
+      grid-area: 1/1;
+      font-family: 'Qanelas';
+      font-size: 20px;
+      font-weight: 200; }
+    main form div .gridForm__reserva .reserva--input {
+      grid-area: 2/1; }
+  main form div .boton__reservar {
+    margin-top: 4rem;
+    text-align: center;
+    width: 50%;
+    transform: translateX(12rem); }
+  main form div .formulario__uno .form__label {
+    margin-top: 1.5rem; }
+  main form div .gridForm__reserva .form__label {
+    margin-top: 1.5rem; } }
+
+@media (max-width: 799px) {
+  .flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+    justify-content: center;
+    align-items: center; }
+    .flex .reservaBloque {
+      grid-area: 1/1;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+    .flex .form {
+      display: flex;
+      justify-content: center; }
+      .flex .form .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%; }
+        .flex .form .formulario .formulario__uno {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .flex .form .formulario .formulario__uno .form__decor {
+            font-family: 'Qanelas';
+            font-weight: 100;
+            background-color: #F5ebee;
+            border: none;
+            height: 40px;
+            width: 80%; }
+            .flex .form .formulario .formulario__uno .form__decor option {
+              font-family: 'Qanelas';
+              font-weight: 100;
+              background-color: #F5ebee;
+              border: none;
+              height: 40px; }
+          .flex .form .formulario .formulario__uno .form__label {
+            font-size: 18px; }
+        .flex .form .formulario .gridForm__reserva {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .flex .form .formulario .gridForm__reserva .form__decor {
+            font-family: 'Qanelas';
+            font-weight: 100;
+            background-color: #F5ebee;
+            border: none;
+            height: 40px;
+            width: 80%; }
+          .flex .form .formulario .gridForm__reserva .form__label {
+            font-size: 18px; }
+        .flex .form .formulario .boton__reservar {
+          display: flex;
+          justify-content: center;
+          align-items: center; } }

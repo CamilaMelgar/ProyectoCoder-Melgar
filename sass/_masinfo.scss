@@ -1,0 +1,31 @@
+main {
+    div {
+        .columnas__p {
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .titulos {
+            margin-top: 4rem;
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    main{
+        div {
+            .ColumnaDos__flex {
+                display: flex;
+                iframe {
+                    width: 50%;
+                    margin-left: 2rem;
+                }
+                .columna--margin {
+                    width: 40%;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    } 
+}

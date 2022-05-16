@@ -7,6 +7,16 @@ header {
                 .navbar-auto {
                     margin: 0 auto;
                 }
+                ul {
+                    .nav-item {
+                        margin-left: 5rem;
+                        .nav-link {
+                            font-size: 1.6rem;
+                            font-weight: 200;
+                            color: black;
+                        }
+                    }
+                }
             }
         }
     }

@@ -1,0 +1,296 @@
+.bloque {
+    display: flex;
+    width: auto;
+    min-height: 500px;
+    margin: 50px;
+    background-color: white;
+    justify-content: center;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75);
+
+    .vertical_flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloque__Uno {
+        background-color: #8D62D7;
+        color: white;
+        border-radius: 16px;
+        width: 30%;
+
+        .bloque__Uno--text {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .margin_30 {
+            font-size: 15px;
+            margin: 10px 30px 0px 30px;
+        }
+        .titulo__form {
+            font-size: 35px;
+        }
+
+        .bloque__margin {
+            margin: auto;
+
+            .bloque__flex {
+                display: flex;
+                margin: 0px 0px 0px 0px;
+
+                .contacto_p {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .flex_row {
+                display: flex;
+                margin: 30px 0px 0px 0px;
+                .contacto_p {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            
+        }
+    }
+
+    .bloque__Dos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 2rem;
+        background-color: white;
+        border-radius: 0px 16px 16px 0px;
+        width: 70%;
+
+        .contenidoForm1 {
+            .nombre__input {
+                .form__input {
+                    border: none;
+                    border-bottom-style: groove;
+                }
+            }
+            .apellido__input {
+                .form__input {
+                    border: none;
+                    border-bottom-style: groove;
+                }
+            }
+        }
+        .flex__boton {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 3rem;
+
+            .enviarBoton {
+                font-family: 'Qanelas';
+                font-weight: 300;
+                font-size: 20px;
+                color: white;
+                background-color: #8D62D7;
+                text-align: center;
+                border-radius: 20px;
+                width: 20%;
+                height: 60px; 
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    main {
+        .bloque__Dos {
+
+            .contenidoForm1 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(1fr);
+                grid-column-gap: 36px;
+                grid-row-gap: 26px;
+                margin-left: 2rem;
+
+                .nombre {
+                    grid-area: 1/1;
+                    font-family: 'Qanelas';
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+                .nombre__input {
+                    grid-area: 2/1;
+                    input {
+                        width: 90%;
+                    }
+                }
+                .apellido {
+                    grid-area: 1/2;
+                    font-family: 'Qanelas';
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+            
+                .apellido__input {
+                    grid-area: 2/2;
+                    input {
+                        width: 90%;
+                    }
+                }
+            }
+            .contenidoForm2 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr, 2fr;
+                grid-column-gap: 36px;
+                grid-row-gap: 10px;
+
+                .mensaje {
+                    grid-area: 1/1;
+                    margin-left: 2rem;
+                    font-family: 'Qanelas';
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+                .mensaje__input {
+                    grid-area: 2/1;
+                    margin-left: 2rem;
+                    textarea {
+                        display: block;
+                        box-sizing: border-box;
+                        width: 95%;
+                        padding: 0.5rem 0.75rem;
+                        font-family: 'Qanelas';
+                        font-weight: 200;
+                        height: 90px;
+                    }
+                }
+            
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .bloque {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        min-height: 500px;
+        margin: 50px;
+        background-color: white;
+        justify-content: center;
+        border-radius: 16px 16px 16px 16px;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75);
+
+        .bloque__Uno {
+            width: 100%;
+            .titulo__form {
+                width: 100%;
+                font-size: 30px;
+            }
+            .bloque__margin {
+                .bloque__flex {
+                    .contacto_p {
+                        font-weight: 700;
+                    }
+                } 
+                .flex_row {
+                    .contacto_p {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    
+        .bloque__Dos {
+            width: 100%;
+            border-bottom-left-radius: 16px;
+
+            .contenidoForm1 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(1fr);
+                grid-column-gap: 36px;
+                grid-row-gap: 26px;
+                margin-left: 2rem;
+                .nombre {
+                    grid-area: 1/1;
+                    font-family: 'Qanelas';
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+                .nombre__input {
+                    grid-area: 2/1;
+                    input {
+                        width: 90%;
+                    }
+                }
+            
+                .apellido {
+                    grid-area: 1/2;
+                    font-family: 'Qanelas';
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+            
+                .apellido__input {
+                    grid-area: 2/2;
+                    input {
+                        width: 90%;
+                    }
+                }
+            }
+            .contenidoForm2 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr, 2fr;
+                grid-column-gap: 36px;
+                grid-row-gap: 10px;
+                margin-left: 2rem;
+                .mensaje {
+                    grid-area: 1/1;
+                    font-family: 'Qanelas';
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+            
+                .mensaje__input {
+                    grid-area: 2/1;
+                    textarea {
+                        display: block;
+                        box-sizing: border-box;
+                        width: 95%;
+                        padding: 0.5rem 0.75rem;
+                        font-family: 'Qanelas';
+                        font-weight: 200;
+                        height: 90px;
+                    }
+                }
+            }
+            .flex__boton {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1rem;
+                
+                .enviarBoton {
+                    font-family: 'Qanelas';
+                    font-weight: 300;
+                    font-size: 20px;
+                    color: white;
+                    background-color: #8D62D7;
+                    text-align: center;
+                    border-radius: 20px;
+                    width: 40%;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+

@@ -33,25 +33,22 @@
 }
 
 html {
+    font-size: 62.5%;
     height: 100vh;
 
-    body  { background-color: #F5ebee;
-    font-family: 'Qanelas';
-    min-height: 100%;
-
-    nav {
-        div {
-            a{
-                text-decoration: none;
-                justify-content: space-between;
-                font-family: 'Qanelas';
-                font-weight: 200;
-            }
-        }
-    }
+    body {
+        background-color: #F5ebee;
+        font-family: 'Qanelas';
+        min-height: 100%;
     }
 }
 
+a {
+    text-decoration: none;
+    justify-content: space-between;
+    font-family: 'Qanelas';
+    font-weight: 200;
+}
 h1 {
     font-family: 'Qanelas';
     font-weight: 400;
@@ -69,5 +66,23 @@ p {
     font-weight: 100;
 }
 
+@mixin formDecor {
+    font-family: 'Qanelas';
+    font-weight: 100;
+    background-color: #F5ebee;
+    border: none;
+    height: 40px;
+}
+
+@mixin card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@import "contacto";
 @import "index";
 @import "header";
+@import "masinfo";
+@import "tiposdeterapia";
+@import "reservar";
