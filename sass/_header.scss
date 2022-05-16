@@ -1,3 +1,4 @@
+@import "variablesfunciones";
 header {
     nav {
         div {
@@ -13,7 +14,7 @@ header {
                         .nav-link {
                             font-size: 1.6rem;
                             font-weight: 200;
-                            color: black;
+                            color: map-get($map: $palette, $key: 'black');
                         }
                     }
                 }
@@ -32,7 +33,7 @@ footer {
         div{
             .footer__p {
                 text-align: center;
-                color: white;
+                color: map-get($map: $palette, $key: 'secundario');
                 margin-top: 2rem;
                 margin-bottom: 2rem;
             }
@@ -46,7 +47,7 @@ footer {
                     column-gap: 20px;
 
                     .navPrincipal__enlaces {
-                        color: white;
+                        color: map-get($map: $palette, $key: 'secundario');
                         font-size: 15px;
                     }
                 }

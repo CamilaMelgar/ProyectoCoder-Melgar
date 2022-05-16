@@ -1,0 +1,24 @@
+@use "sass:map";
+
+$palette: (
+    'bg': #F5ebee,
+    'violet': #8D62D7,
+    'secundario': white,
+    'black': #000,
+);
+
+
+@mixin formDecor {
+    font-family: 'Qanelas';
+    font-weight: 100;
+    background-color: map-get($map: $palette, $key: 'bg');
+    border: none;
+    height: 40px;
+}
+
+/*extend para seccion tipos de terapias*/
+.flexBox--Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,59 +1,9 @@
-@font-face {
-  font-family: 'Qanelas';
-  src: url(../fonts/Qanelas-ExtraBold.ttf);
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: 'Qanelas';
-  src: url(../fonts/Qanelas-Light.ttf);
-  font-style: normal;
-  font-weight: 200; }
-
-@font-face {
-  font-family: 'Qanelas';
-  src: url(../fonts/Qanelas-Medium.ttf);
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: 'Qanelas';
-  src: url(../fonts/Qanelas-UltraLight.ttf);
-  font-style: normal;
-  font-weight: 100; }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-html {
-  font-size: 62.5%;
-  height: 100vh; }
-  html body {
-    background-color: #F5ebee;
-    font-family: 'Qanelas';
-    min-height: 100%; }
-
-a {
-  text-decoration: none;
-  justify-content: space-between;
-  font-family: 'Qanelas';
-  font-weight: 200; }
-
-h1 {
-  font-family: 'Qanelas';
-  font-weight: 400;
-  font-size: 50px;
-  margin-bottom: 3rem; }
-
-h2 {
-  font-family: 'Qanelas';
-  font-size: 50px;
-  text-align: center; }
-
-p {
-  font-weight: 100; }
+@use "sass:map";
+/*extend para seccion tipos de terapias*/
+.flexBox--Card, main div div div div div .box-2 .card-body, main div div div div div .box .card-body, main div div div div div .box__p .card-body, main div div div div div .shadow .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .bloque {
   display: flex;
@@ -262,6 +212,13 @@ p {
           width: 40%;
           height: 60px; } }
 
+@use "sass:map";
+/*extend para seccion tipos de terapias*/
+.flexBox--Card, main div div div div div .box-2 .card-body, main div div div div div .box .card-body, main div div div div div .box__p .card-body, main div div div div div .shadow .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 main div .contenidoPrincipal__texto {
   padding-left: 2rem; }
   main div .contenidoPrincipal__texto .imagenPrincipal {
@@ -277,10 +234,10 @@ main div .contenidoPrincipal__texto {
     background-color: #F5ebee;
     text-align: center;
     border-radius: 50px;
-    border-color: black;
+    border-color: #000;
     transition-duration: 0.4s; }
     main div .contenidoPrincipal__texto .boton:hover {
-      background-color: black;
+      background-color: #000;
       color: white;
       cursor: pointer; }
 
@@ -296,6 +253,13 @@ main div .contenidoPrincipal__texto {
     main div .contenidoPrincipal__texto .imagenPrincipal {
       width: 100%; } }
 
+@use "sass:map";
+/*extend para seccion tipos de terapias*/
+.flexBox--Card, main div div div div div .box-2 .card-body, main div div div div div .box .card-body, main div div div div div .box__p .card-body, main div div div div div .shadow .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 header nav div .collapse-padding {
   padding-right: 100px; }
   header nav div .collapse-padding .navbar-auto {
@@ -305,7 +269,7 @@ header nav div .collapse-padding {
     header nav div .collapse-padding ul .nav-item .nav-link {
       font-size: 1.6rem;
       font-weight: 200;
-      color: black; }
+      color: #000; }
 
 footer {
   background-color: #58494e;
@@ -364,16 +328,19 @@ main div .titulos {
       width: 40%;
       margin-left: 1rem; } }
 
+@use "sass:map";
+/*extend para seccion tipos de terapias*/
+.flexBox--Card, main div div div div div .box-2 .card-body, main div div div div div .box .card-body, main div div div div div .box__p .card-body, main div div div div div .shadow .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 main .titulo-margin {
   margin-bottom: 5rem; }
 
 main div div div div div .box-2 {
   background-color: white;
   min-height: 200px; }
-  main div div div div div .box-2 .card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
 
 main div div div div div .box {
   transition: all 0.3s ease-in-out; }
@@ -390,25 +357,20 @@ main div div div div div .box {
     transform: scale(1.2, 1.2); }
     main div div div div div .box:hover::after {
       opacity: 1; }
-  main div div div div div .box .card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
 
 main div div div div div .box__p {
   font-weight: 300;
   font-size: 20px; }
-  main div div div div div .box__p .card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
 
 main div div div div div .shadow {
   box-shadow: 0 0.5rem 1rem #f0c3f0 !important; }
-  main div div div div div .shadow .card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+
+@use "sass:map";
+/*extend para seccion tipos de terapias*/
+.flexBox--Card, main div div div div div .box-2 .card-body, main div div div div div .box .card-body, main div div div div div .box__p .card-body, main div div div div div .shadow .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .flex {
   display: grid;
@@ -569,3 +531,67 @@ main div div div div div .shadow {
           display: flex;
           justify-content: center;
           align-items: center; } }
+
+@use "sass:map";
+/*extend para seccion tipos de terapias*/
+.flexBox--Card, main div div div div div .box-2 .card-body, main div div div div div .box .card-body, main div div div div div .box__p .card-body, main div div div div div .shadow .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@font-face {
+  font-family: 'Qanelas';
+  src: url(../fonts/Qanelas-ExtraBold.ttf);
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Qanelas';
+  src: url(../fonts/Qanelas-Light.ttf);
+  font-style: normal;
+  font-weight: 200; }
+
+@font-face {
+  font-family: 'Qanelas';
+  src: url(../fonts/Qanelas-Medium.ttf);
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Qanelas';
+  src: url(../fonts/Qanelas-UltraLight.ttf);
+  font-style: normal;
+  font-weight: 100; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  height: 100vh; }
+  html body {
+    background-color: #F5ebee;
+    font-family: 'Qanelas';
+    min-height: 100%; }
+
+a {
+  text-decoration: none;
+  justify-content: space-between;
+  font-family: 'Qanelas';
+  font-weight: 200; }
+
+h1 {
+  font-family: 'Qanelas';
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 3rem; }
+
+h2 {
+  font-family: 'Qanelas';
+  font-size: 50px;
+  text-align: center; }
+
+p {
+  font-weight: 100; }

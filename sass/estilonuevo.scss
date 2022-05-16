@@ -1,3 +1,11 @@
+@import "contacto";
+@import "index";
+@import "header";
+@import "masinfo";
+@import "tiposdeterapia";
+@import "reservar";
+@import "variablesfunciones";
+
 @font-face {
     font-family: 'Qanelas';
     src: url(../fonts/Qanelas-ExtraBold.ttf);
@@ -49,6 +57,7 @@ a {
     font-family: 'Qanelas';
     font-weight: 200;
 }
+
 h1 {
     font-family: 'Qanelas';
     font-weight: 400;
@@ -65,24 +74,3 @@ h2 {
 p {
     font-weight: 100;
 }
-
-@mixin formDecor {
-    font-family: 'Qanelas';
-    font-weight: 100;
-    background-color: #F5ebee;
-    border: none;
-    height: 40px;
-}
-
-@mixin card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@import "contacto";
-@import "index";
-@import "header";
-@import "masinfo";
-@import "tiposdeterapia";
-@import "reservar";

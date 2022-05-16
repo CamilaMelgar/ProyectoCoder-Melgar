@@ -1,3 +1,5 @@
+@import "variablesfunciones";
+
 .flex {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -16,7 +18,7 @@
             width: 500px;
             min-height: 600px;
             margin: 50px;
-            background-color: white;
+            background-color: map-get($map: $palette, $key: 'secundario');
             justify-content: center;
             border-radius: 16px 16px 16px 16px;
             box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75);
@@ -50,8 +52,8 @@
                     font-family: 'Qanelas';
                     font-weight: 300;
                     font-size: 20px;
-                    color: white;
-                    background-color: #8D62D7;
+                    color: map-get($map: $palette, $key: 'secundario');
+                    background-color: map-get($map: $palette, $key: 'violet');
                     text-align: center;
                     border-radius: 20px;
                     &:hover {
