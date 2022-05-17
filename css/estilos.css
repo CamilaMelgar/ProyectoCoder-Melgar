@@ -390,7 +390,8 @@ main div div div div div .shadow {
     background-color: white;
     justify-content: center;
     border-radius: 16px 16px 16px 16px;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75); }
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75);
+    padding-right: 2rem; }
     .flex form .formulario .formulario__uno .form__label {
       font-family: 'Qanelas';
       font-weight: 200; }
