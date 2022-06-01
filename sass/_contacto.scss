@@ -53,6 +53,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    margin-top: 1rem;
                 }
             }
             
@@ -177,7 +178,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .bloque {
         display: flex;
         flex-direction: column;

@@ -45,7 +45,8 @@
         .bloque .bloque__Uno .bloque__margin .flex_row .contacto_p {
           display: flex;
           justify-content: center;
-          align-items: center; }
+          align-items: center;
+          margin-top: 1rem; }
   .bloque .bloque__Dos {
     display: flex;
     flex-direction: column;
@@ -127,7 +128,7 @@
         font-weight: 200;
         height: 90px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .bloque {
     display: flex;
     flex-direction: column;
