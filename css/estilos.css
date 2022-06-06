@@ -38,7 +38,8 @@
         .bloque .bloque__Uno .bloque__margin .bloque__flex .contacto_p {
           display: flex;
           justify-content: center;
-          align-items: center; }
+          align-items: center;
+          margin-bottom: 0rem; }
       .bloque .bloque__Uno .bloque__margin .flex_row {
         display: flex;
         margin: 30px 0px 0px 0px; }
@@ -55,12 +56,28 @@
     background-color: white;
     border-radius: 0px 16px 16px 0px;
     width: 70%; }
+    .bloque .bloque__Dos .contenidoForm1 .nombre .form__label {
+      font-size: small;
+      font-weight: 300; }
     .bloque .bloque__Dos .contenidoForm1 .nombre__input .form__input {
       border: none;
-      border-bottom-style: groove; }
+      border-bottom-style: groove;
+      font-size: large;
+      font-weight: 200; }
+    .bloque .bloque__Dos .contenidoForm1 .apellido .form__label {
+      font-size: small;
+      font-weight: 300; }
     .bloque .bloque__Dos .contenidoForm1 .apellido__input .form__input {
       border: none;
-      border-bottom-style: groove; }
+      border-bottom-style: groove;
+      font-size: large;
+      font-weight: 200; }
+    .bloque .bloque__Dos .contenidoForm2 .mensaje .form__label {
+      font-size: small;
+      font-weight: 300; }
+    .bloque .bloque__Dos .contenidoForm2 .mensaje__input textarea {
+      font-size: medium;
+      font-weight: 200; }
     .bloque .bloque__Dos .flex__boton {
       display: flex;
       justify-content: flex-end;
@@ -74,7 +91,8 @@
         text-align: center;
         border-radius: 20px;
         width: 20%;
-        height: 60px; }
+        height: 60px;
+        border-width: 0rem; }
         .bloque .bloque__Dos .flex__boton .enviarBoton:hover {
           cursor: pointer; }
 
@@ -84,7 +102,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1fr);
     grid-column-gap: 36px;
-    grid-row-gap: 26px;
     margin-left: 2rem; }
     main .bloque__Dos .contenidoForm1 .nombre {
       grid-area: 1/1;
@@ -145,9 +162,7 @@
         width: 100%;
         font-size: 30px; }
       .bloque .bloque__Uno .bloque__margin .bloque__flex .contacto_p {
-        font-weight: 700; }
-      .bloque .bloque__Uno .bloque__margin .flex_row .contacto_p {
-        font-weight: 700; }
+        margin-bottom: 0rem; }
     .bloque .bloque__Dos {
       width: 100%;
       border-bottom-left-radius: 16px; }
@@ -393,6 +408,9 @@ main div div div div div .shadow {
     border-radius: 16px 16px 16px 16px;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75);
     padding-right: 2rem; }
+    .flex form .formulario .formulario__uno input {
+      font-size: medium;
+      padding: 0.5rem; }
     .flex form .formulario .formulario__uno .form__label {
       font-family: 'Qanelas';
       font-weight: 200; }
@@ -408,6 +426,9 @@ main div div div div div .shadow {
       background-color: #F5ebee;
       border: none;
       height: 40px; }
+    .flex form .formulario .gridForm__reserva input {
+      font-size: medium;
+      padding: 0.5rem; }
     .flex form .formulario .gridForm__reserva .form__label {
       font-family: 'Qanelas';
       font-weight: 200; }
@@ -426,7 +447,8 @@ main div div div div div .shadow {
       color: white;
       background-color: #8D62D7;
       text-align: center;
-      border-radius: 20px; }
+      border-radius: 20px;
+      border-width: 0rem; }
       .flex form .formulario .boton__reservar .submit:hover {
         cursor: pointer; }
 
